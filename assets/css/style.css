@@ -1,0 +1,61 @@
+/* Google Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Globals  */
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================== */
+#game {
+    position: relative;
+    top: 70px;
+    margin: auto;
+    width: 300px;
+    height: 500px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-image: linear-gradient(to bottom, #c4baff, #ffffff);
+
+}
+
+#player {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    top: 400px;
+    position: absolute;
+    left: 100px;
+}
+
+#block {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    top: -100px;
+    position: absolute;
+    left: 100px;
+    animation: moveDown 1s linear infinite;
+}
+
+@keyframes moveDown {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 100%;
+    }
+}
+
+#score {
+    position: relative;
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    font-size: large;
+    z-index: 1000;
+}
